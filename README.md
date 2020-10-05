@@ -15,6 +15,8 @@ While this code is in the public domain, some components have been "borrowed" fr
 
 To be honest, the makefile structure modifications I have made aren't all that good. The kernel makefile blatantly compiles all source files rather than relevant ones inferred from the #included headers. Feeling productive, may refactor later idk.
 
+Except to see this template improve and become more comprehensive over time.
+
 ## Getting Started
 You'll need the following tools installed:
 - clang and lld (specifically lld-link)
@@ -25,3 +27,5 @@ If you're on Windows, try using Windows Subsystem for Linux or Cygwin.
 Then, run the build system: ```make```. The OS will be built and QEMU will launch.
 
 ![Image of Hello World running in QEMU](Bits/Hello.png?raw=true "Hello World running in QEMU")
+
+To boot this on a real computer, you could probably copy the "efi" folder under "Build/HDD/efi" to the [EFI partition](https://en.wikipedia.org/wiki/EFI_system_partition) on a USB device or hard disk. Likewise, an ISO image could be created from the "HDD" folder, and then be booted on a virtual machine or distributed.
