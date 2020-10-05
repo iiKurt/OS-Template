@@ -11,7 +11,9 @@ While this code is in the public domain, some components have been "borrowed" fr
  - Topmost makefile and kernel.c: https://wiki.osdev.org/User:No92/UEFI_Bare_Bones
  - Kernel makefile: https://stackoverflow.com/a/48267562
  - Zircon UEFI Headers (MIT License) (Mirror): https://github.com/vineyard-os/zircon-uefi
- - maybe other things
+ - maybe other things...
+
+To be honest, the makefile structure modifications I have made aren't all that good. The kernel makefile blatantly compiles all source files rather than relevant ones inferred from the #included headers. Feeling productive, may refactor later idk.
 
 ## Getting Started
 You'll need the following tools installed:
@@ -22,4 +24,4 @@ If you're on Windows, try using Windows Subsystem for Linux or Cygwin.
 
 Then, run the build system: ```make```. The OS will be built and QEMU will launch.
 
-![Image of Hello World running in QEMU](Bits/Hello World.png?raw=true "Hello World running in QEMU")
+![Image of Hello World running in QEMU](Bits/Hello.png?raw=true "Hello World running in QEMU")
