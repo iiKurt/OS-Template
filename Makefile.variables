@@ -1,0 +1,10 @@
+# executables
+CC			:= /usr/local/opt/llvm/bin/clang
+LD			:= /usr/local/opt/llvm/bin/lld-link
+
+# there was an -fpic flag, but it was removed
+CFLAGS		:= -ffreestanding -flto -fno-stack-protector -fshort-wchar -ISource/include -MMD -MP -mno-red-zone -std=c11 -target x86_64-pc-win32-coff -Wall -Wextra
+LDFLAGS		:= -subsystem:efi_application -nodefaultlib -dll
+
+# TODO: todo target showing all todos in source files
+# TODO: include directories in CFLAGS (-I)

@@ -1,0 +1,24 @@
+A makefile works upon the principle that files only need recreating if their dependencies are newer than the file being created/recreated (target).
+
+TARGET: DEPENDENCIES
+	command
+
+####################
+Example
+####################
+
+EFIHDD: EFI
+	command
+
+EFI: OBJECT
+	command
+
+OBJECT: SOURCE
+	command
+
+
+Makefile runs through all of the rules:
+It detects that the source is newer than the objects, runs command...
+object is newer than EFI, runs command
+EFI is newer than EFIHDD, runs command
+:)
