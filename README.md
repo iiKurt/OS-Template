@@ -4,7 +4,7 @@ Let's get started.
 ## What is this?
 This is an extremely basic "operating system" boilerplate. Expand upon it to build your own operating system, without all the hassle of setting up a compiler, directory structure, makefile etc.
 
-The OS is designed to be modern: It utilised UEFI and builds for x86_64.
+The OS is designed to be modern: It utilises UEFI and builds for x86_64.
 
 ## Notes
 While this code is in the public domain, some components have been "borrowed" from other sources. This means other license conditions may apply. Most notably: 
