@@ -7,7 +7,7 @@ This is an extremely basic "operating system" boilerplate. Expand upon it to bui
 The OS is designed to be modern: It utilises UEFI and builds for x86_64.
 
 ## Notes
-While this code is in the public domain, some components have been "borrowed" from other sources. This means other license conditions may apply. Most notably: 
+While any code I've written is in the public domain, some components have been "borrowed" from other sources. This means other license conditions may apply. Most notably: 
  - Topmost makefile and kernel.c: https://wiki.osdev.org/User:No92/UEFI_Bare_Bones
  - Kernel makefile: https://stackoverflow.com/a/48267562
  - Zircon UEFI Headers (MIT License) (Mirror): https://github.com/vineyard-os/zircon-uefi
