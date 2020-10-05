@@ -22,7 +22,8 @@ You'll need the following tools installed:
 - clang and lld (specifically lld-link)
 - qemu-system-x86_64
 - make, git, wget
-If you're on Windows, try using Windows Subsystem for Linux or Cygwin.
+
+(If you're on Windows, try using Windows Subsystem for Linux or Cygwin.)
 
 Then, run the build system: ```make```. The OS will be built and QEMU will launch.
 
