@@ -1,0 +1,25 @@
+Potential directory structure...
+(needs to be updated)
+
+OS:
+	Source:
+		API:
+		
+		Kernel:
+			Kernel.c
+			Makefile
+		Boot:
+			EFI:
+				x86_64:
+					Include:
+						efi
+					Loader.c
+				
+		Applications:
+			Calculator:
+				main.c
+	Build:
+		Object:
+		Binary:
+	Makefile
+	Readme.md
