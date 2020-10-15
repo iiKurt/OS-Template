@@ -4,10 +4,10 @@ Let's get started.
 ## What is this?
 This is an extremely basic "operating system" boilerplate. Expand upon it to build your own operating system, without all the hassle of setting up a compiler, directory structure, makefile etc.
 
-The OS is designed to be modern: It utilised UEFI and builds for x86_64.
+The OS is designed to be modern: It utilises UEFI and builds for x86_64.
 
 ## Notes
-While this code is in the public domain, some components have been "borrowed" from other sources. This means other license conditions may apply. Most notably: 
+While any code I've written is in the public domain, some components have been "borrowed" from other sources. This means other license conditions may apply. Most notably: 
  - Topmost makefile and kernel.c: https://wiki.osdev.org/User:No92/UEFI_Bare_Bones
  - Kernel makefile: https://stackoverflow.com/a/48267562
  - Zircon UEFI Headers (MIT License) (Mirror): https://github.com/vineyard-os/zircon-uefi
@@ -15,13 +15,18 @@ While this code is in the public domain, some components have been "borrowed" fr
 
 To be honest, the makefile structure modifications I have made aren't all that good. The kernel makefile blatantly compiles all source files rather than relevant ones inferred from the #included headers. Feeling productive, may refactor later idk.
 
+Except to see this template improve and become more comprehensive over time.
+
 ## Getting Started
 You'll need the following tools installed:
 - clang and lld (specifically lld-link)
 - qemu-system-x86_64
 - make, git, wget
-If you're on Windows, try using Windows Subsystem for Linux or Cygwin.
+
+(If you're on Windows, try using Windows Subsystem for Linux or Cygwin.)
 
 Then, run the build system: ```make```. The OS will be built and QEMU will launch.
 
 ![Image of Hello World running in QEMU](Bits/Hello.png?raw=true "Hello World running in QEMU")
+
+To boot this on a real computer, you could probably copy the "efi" folder under "Build/HDD/efi" to the [EFI partition](https://en.wikipedia.org/wiki/EFI_system_partition) on a USB device or hard disk. Likewise, an ISO image could be created from the "HDD" folder, and then be booted on a virtual machine or distributed.
