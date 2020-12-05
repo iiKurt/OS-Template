@@ -13,7 +13,7 @@ While any code I've written is in the public domain, some components have been "
  - Zircon UEFI Headers (MIT License) (Mirror): https://github.com/vineyard-os/zircon-uefi
  - maybe other things...
 
-To be honest, the makefile structure modifications I have made aren't all that good. The kernel makefile blatantly compiles all source files rather than relevant ones inferred from the #included headers. Feeling productive, may refactor later idk.
+To be honest, the makefile structure modifications I have made aren't all that good. The kernel makefile blatantly compiles all source files rather than relevant ones inferred from the #included headers. (Could perhaps use makefile/GCC dependencies, .d files) Feeling productive, may refactor later idk.
 
 Except to see this template improve and become more comprehensive over time.
 
