@@ -1,15 +1,18 @@
 # OS-Template
-Let's get started.
-
 ## What is this?
 This is an extremely basic "operating system" boilerplate. Expand upon it to build your own operating system, without all the hassle of setting up a compiler, directory structure, makefile etc.
 
-The OS is designed to be modern: It utilises UEFI and builds for x86_64.
+The template is designed to be modern: It utilises UEFI and builds for x86_64.
+
+### What does it do?
+ - Compiles and runs a simple UEFI application, which can be expanded into a bootloader.
+### What doesn't it do?
+ - Pretty much everything. It doesn't exit the UEFI boot services, so it is technically a UEFI application and not a bootloader.
 
 ## Notes
 While any code I've written is in the public domain, some components have been "borrowed" from other sources. This means other license conditions may apply. Most notably: 
  - Topmost makefile and kernel.c: https://wiki.osdev.org/User:No92/UEFI_Bare_Bones
- - Kernel makefile: https://stackoverflow.com/a/48267562
+ - Bootloader makefile: https://stackoverflow.com/a/48267562
  - Zircon UEFI Headers (MIT License) (Mirror): https://github.com/vineyard-os/zircon-uefi
  - maybe other things...
 
