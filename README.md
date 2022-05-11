@@ -18,7 +18,7 @@ While any code I've written is in the public domain, some components have been "
 
 To be honest, the makefile structure modifications I have made aren't all that good. The kernel makefile blatantly compiles all source files rather than relevant ones inferred from the #included headers. (Could perhaps use makefile/GCC dependencies, .d files) Feeling productive, may refactor later idk.
 
-Except to see this template improve and become more comprehensive over time.
+Expect to see this template improve and become more comprehensive over time.
 
 ## Getting Started
 You'll need the following tools installed:
